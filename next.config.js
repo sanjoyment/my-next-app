@@ -1,9 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
+  // reactStrictMode: true,
   experimental: {
     instrumentationHook: true,
-    appDir: true,
+    // appDir: true,
   }
 }
 
