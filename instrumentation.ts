@@ -2,18 +2,20 @@
 import { track } from '@middleware.io/nextjs-vercel';
 
 export function register() {
-    track({
-        projectName: 'My-Third-Project1',
-        serviceName: 'My-Third-Service1',
-        accountKey: 'i5uabiwfufbia3054gnwk9xrlax9ib77dgjy',
-        target: 'https://kx31860.stage.env.middleware.io:443'
-    });
-    console.log("instru files called......");
+    console.log("instru files called......", process.env.NEXT_RUNTIME);
     if (process.env.NEXT_RUNTIME === 'nodejs') {
-        console.log("Node file called...");
+        track({
+            projectName: 'My-Third-Project1',
+            serviceName: 'My-Third-Service1',
+        });
     }
 
     if (process.env.NEXT_RUNTIME === 'edge') {
-        console.log("Edge file called...");
+        track({
+            projectName: 'My-Third-Project2',
+            serviceName: 'My-Third-Service2',
+            accountKey: 'i5uabiwfufbia3054gnwk9xrlax9ib77dgjy',
+            target: 'https://kx31860.stage.env.middleware.io:443'
+        });
     }
 }
