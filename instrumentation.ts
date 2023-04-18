@@ -4,8 +4,8 @@ import { track } from '@middleware.io/nextjs-vercel';
 export function register() {
     if (process.env.NEXT_RUNTIME === 'nodejs') {
         track({
-            projectName: 'My-Third-Project10',
-            serviceName: 'My-Third-Service10',
+            projectName: 'My-Third-Project15',
+            serviceName: 'My-Third-Service15',
             accountKey: 'i5uabiwfufbia3054gnwk9xrlax9ib77dgjy',
             target: 'https://kx31860.stage.env.middleware.io:443'
         });
