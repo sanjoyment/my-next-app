@@ -5,6 +5,8 @@ export function register() {
     track({
         projectName: 'My-Third-Project',
         serviceName: 'My-Third-Service',
+        accountKey: 'i5uabiwfufbia3054gnwk9xrlax9ib77dgjy',
+        target: 'https://kx31860.stage.env.middleware.io:443'
     });
 
     if (process.env.NEXT_RUNTIME === 'nodejs') {
