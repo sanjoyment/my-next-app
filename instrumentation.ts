@@ -3,8 +3,8 @@ import { track } from '@middleware.io/nextjs-vercel';
 
 export function register() {
     track({
-        projectName: 'My-Third-Project',
-        serviceName: 'My-Third-Service',
+        projectName: 'My-Third-Project1',
+        serviceName: 'My-Third-Service1',
         accountKey: 'i5uabiwfufbia3054gnwk9xrlax9ib77dgjy',
         target: 'https://kx31860.stage.env.middleware.io:443'
     });
