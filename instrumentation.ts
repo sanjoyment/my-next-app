@@ -8,7 +8,7 @@ export function register() {
         accountKey: 'i5uabiwfufbia3054gnwk9xrlax9ib77dgjy',
         target: 'https://kx31860.stage.env.middleware.io:443'
     });
-
+    console.log("instru files called......");
     if (process.env.NEXT_RUNTIME === 'nodejs') {
         console.log("Node file called...");
     }
