@@ -2,7 +2,7 @@
 import { track } from '@middleware.io/nextjs-vercel';
 
 export function register() {
-    // console.log("process.env.NEXT_RUNTIME==>",process.env.NEXT_RUNTIME);
+    console.log("process.env.NEXT_RUNTIME==>",process.env.NEXT_RUNTIME);
     // if (process.env.NEXT_RUNTIME === 'nodejs') {
     track({
         projectName: 'My-Third-Project18',
